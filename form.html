@@ -2,10 +2,42 @@
 <html>
     <head>
         <title>My Webpage</title>
+        <style>
+            input[type=text]{
+                background-color: yellowgreen;
+            }
+            input[type=number]{
+                background-color: beige;
+            }
+        </style>
     </head>
     <body>
         <form>
-            <input type="text" placeholder="email id" email="email">
+            <div>
+                <input type="text" placeholder="email id" name="email">
+                <input name="password" type="password"placeholder="password">
+                <input age="age" type="number" placeholder="age">
+            </div>
+
+            <div>
+                Book?
+                <input name="book" type="radio" value="Sweet Dreams">Sweet Dreams
+                <input name="book" type="radio" value="Own the Wind">Own the Wind
+                <input name="book" type="radio" value="Wildest Dreams">Wildest Dreams
+            </div>
+
+            <div>
+                <input name="country" list="countries" placeholder="Country">
+                <datalist id="countries">
+                    <option value="Afghanistan">
+                    <option value="Albania">
+                    <option value="Algeria">
+                    <option value="Andorra">
+                    <option value="India">
+                    <option value="Iceland">
+                    <option value="United &amp; States">
+                </datalist>
+            </div>
             <button>Submit!</button>
         </form>
     </body>
